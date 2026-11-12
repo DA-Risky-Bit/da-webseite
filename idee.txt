@@ -1,0 +1,136 @@
+1.2.	Beschreibung der Idee
+Generell
+
+Ziel des Projekts ist es, IT-Sicherheitskonzepte praxisnah und interaktiv zu vermitteln. Teil-nehmerInnen sollen verschiedene Angriffsszenarien nachvollziehen und dabei ein strukturiertes Vorgehen im Bereich Cybersecurity erlernen. Die einzelnen Aufgaben werden in einer kontrol-lierten und isolierten Umgebung durchgeführt und behandeln unter anderem Social Enginee-ring, Verschlüsselung, Linux-Systemadministration und das Ausnutzen von Sicherheitslücken.
+
+Dafür wird eine öffentliche Webseite erstellt, auf welcher die Cybersecurity-Challenge durch-geführt und verwaltet wird. TeilnehmerInnen können mithilfe eines Lobby-Codes einem Event beitreten. Nach dem Beitritt wird für jede Person ein eigenes Benutzerkonto sowie eine isolier-te Challenge-Umgebung erstellt. Dadurch wird verhindert, dass sich TeilnehmerInnen gegensei-tig beeinflussen oder auf die Umgebung anderer Personen zugreifen können.
+
+Auf der Webseite können TeilnehmerInnen unter anderem den aktuellen Fortschritt, die ver-fügbaren Lernressourcen und das Leaderboard einsehen. Die Ergebnisse der einzelnen Aufga-ben werden automatisch überprüft und die dafür vergebenen Punkte dem jeweiligen Benutzer-konto zugeordnet.
+
+Die Durchführung der Challenge erfolgt innerhalb mehrerer voneinander abgegrenzter Phasen. Jede Phase besitzt ein eigenes Ziel und baut auf den Ergebnissen der vorherigen Phase auf.
+
+
+
+Challenge Aufbau
+
+Das Ziel der Challenge ist es, sich schrittweise durch die IT-Infrastruktur eines fiktiven Unter-nehmens zu bewegen und dabei verschiedene Sicherheitsmechanismen und Schwachstellen zu untersuchen.
+
+Die Challenge beginnt außerhalb der internen Unternehmensinfrastruktur. Durch das Sammeln von Informationen und die Kommunikation mit simulierten MitarbeiterInnen sollen zunächst Zugangsdaten ermittelt werden. Anschließend wird der Zugriff auf interne Linux-Systeme er-möglicht, auf denen weitere Hinweise und Aufgaben zu finden sind.
+
+Die einzelnen Phasen bauen dabei aufeinander auf:
+
+Unternehmensextern → Unternehmensintern → Linux-System → Server
+
+Ein wesentlicher Bestandteil der Challenge ist eine firmeninterne Chatplattform. Die dort stattfindenden Gespräche werden durch ein lokal betriebenes KI-System simuliert. Die KI über-nimmt dabei die Rolle verschiedener fiktiver MitarbeiterInnen und gibt abhängig vom definier-ten Szenario bestimmte Informationen preis.
+
+Die gesamte Challenge verwendet ausschließlich fiktive Daten und speziell vorbereitete Syste-me. Die eingebauten Sicherheitslücken sind nur innerhalb der vorgesehenen Challenge-Umgebung vorhanden.
+
+Challenge Ablauf
+
+Die Challenge ist in mehrere Phasen aufgeteilt, die jeweils ein eigenes Mini-Ziel besitzen. Das Erreichen eines Mini-Ziels ermöglicht den TeilnehmerInnen den Zugang zu Informationen oder Systemen, die für die nächste Phase benötigt werden.
+
+Der geplante Ablauf besteht aus folgenden Phasen:
+
+1. Social Engineering und Zugriff auf einen internen Account
+2. Untersuchung eines Linux-Systems und Ermittlung eines SSH-Zugangs
+3. Analyse des Servers und Bearbeitung eines versteckten Services
+4. Verwischen der während des Angriffs entstandenen Spuren
+
+Phase 1:
+
+Das Ziel dieser Phase ist es, mithilfe von Social Engineering Informationen über MitarbeiterIn-nen des fiktiven Unternehmens zu sammeln und dadurch Zugriff auf einen vorgesehenen Benut-zeraccount zu erhalten.
+
+Als Informationsquellen stehen unter anderem die Firmenwebseite und die firmeninterne Chat-plattform zur Verfügung. Zusätzlich können optionale Social-Media-Profile von fiktiven Mitar-beiterInnen verwendet werden.
+
+Die TeilnehmerInnen müssen Informationen aus den unterschiedlichen Quellen miteinander kombinieren. Beispielsweise können auf der Firmenwebseite die E-Mail-Adresse einer Person und in Gesprächen mit anderen MitarbeiterInnen Informationen zu deren persönlichen Sicher-heitsfragen gefunden werden.
+
+Die Kommunikation mit den MitarbeiterInnen erfolgt über ein lokales KI-System. Für jede simu-lierte Person werden eigene Eigenschaften, Beziehungen, bekannte Informationen und Regeln zur Informationsweitergabe definiert.
+
+Lösungsmöglichkeiten:
+•	Informationen auf der Firmenwebseite recherchieren
+•	Kommunikation mit MitarbeiterInnen über die Chatplattform
+•	Social Engineering
+•	Informationen aus mehreren Quellen kombinieren
+•	Sicherheitsfragen des vorgesehenen Accounts ermitteln
+•	Passwort-Wiederherstellungsprozess durchführen
+
+Abgabe:
+
+Als Abschluss der Phase müssen die für den weiteren Verlauf benötigten Zugangsdaten des vor-gesehenen Accounts abgegeben werden.
+
+Phase 2:
+
+Das Ziel dieser Phase ist es, ausgehend vom erlangten internen Account weitere Informationen zu sammeln und dadurch Zugang zu einem Linux-System zu erhalten.
+
+Auf dem Linux-System befinden sich mehrere versteckte beziehungsweise verschlüsselte Datei-en. Diese enthalten Informationen, die für den weiteren Verlauf der Challenge benötigt wer-den.
+
+Die TeilnehmerInnen müssen das Dateisystem untersuchen, relevante Dateien finden und die vorhandenen Hinweise entschlüsseln. Dabei können unterschiedliche Verschlüsselungsverfahren und versteckte Informationen eingesetzt werden.
+
+Zusätzlich befindet sich auf dem System eine vorbereitete Sicherheitslücke, über die eine Privi-lege Escalation durchgeführt werden kann. Dadurch können Informationen aus Bereichen aus-gelesen werden, auf die ein regulärer Benutzer normalerweise keinen Zugriff hätte.
+
+Lösungsmöglichkeiten:
+
+•	Dateien und Verzeichnisse im Linux-System untersuchen
+•	versteckte Dateien identifizieren
+•	Hinweise entschlüsseln
+•	Dateiberechtigungen analysieren
+•	eine vorbereitete Privilege-Escalation-Schwachstelle erkennen
+•	erweiterte Berechtigungen erlangen
+•	benötigte Zugangsinformationen aus dem System auslesen
+•	privaten SSH-Schlüssel ermitteln
+
+Abgabe:
+
+Als Abschluss der Phase müssen der benötigte Benutzername und der private SSH-Schlüssel für den nächsten Server abgegeben werden.
+
+Phase 3:
+
+Das Ziel dieser Phase ist es, mithilfe der in der vorherigen Phase ermittelten Zugangsdaten eine Verbindung zum nächsten Linux-Server herzustellen und einen dort versteckten Service zu finden.
+
+Auf dem Server läuft ein speziell für die Challenge erstellter Service. Dieser ist nicht unmittel-bar anhand seiner Bezeichnung erkennbar und muss durch die Untersuchung des Systems identi-fiziert werden.
+
+Der Service beziehungsweise dessen Quellcode ist zusätzlich geschützt. Die TeilnehmerInnen müssen die vorhandenen Berechtigungen und die im System vorhandenen Hinweise analysieren, um die für die Bearbeitung des Services benötigten Rechte zu erlangen.
+
+Eine mögliche Informationsquelle stellt dabei die Kommando-History dar. Dort können Hinweise auf frühere Änderungen am System enthalten sein, die bei der Analyse des Servers helfen.
+
+Lösungsmöglichkeiten:
+
+•	Verbindung über SSH herstellen
+•	laufende Prozesse und Services untersuchen
+•	den versteckten Service identifizieren
+•	Dateiberechtigungen und Benutzerrechte untersuchen
+•	Hinweise aus der Kommando-History verwenden
+•	die vorgesehene Privilege-Escalation-Möglichkeit ausnutzen
+•	den geschützten Quellcode des Services zugänglich machen
+•	den Service entsprechend der Aufgabenstellung bearbeiten beziehungsweise stoppen
+
+Abgabe:
+
+Als Abschluss der Phase muss nachgewiesen werden, dass der vorgesehene Service erfolgreich bearbeitet wurde.
+
+Phase 4:
+
+Das Ziel dieser Phase ist es, die während der Bearbeitung des Servers entstandenen Spuren zu untersuchen und entsprechend der Aufgabenstellung zu bearbeiten.
+
+Während der vorherigen Phasen entstehen durch die durchgeführten Aktionen unterschiedliche Spuren innerhalb des Systems. Dazu können beispielsweise Einträge in der Kommando-History, Logdateien oder veränderte beziehungsweise neu erstellte Dateien gehören.
+
+Die TeilnehmerInnen sollen die während des Angriffs entstandenen Informationen untersuchen und die für diese Phase definierten Spuren bearbeiten.
+
+Lösungsmöglichkeiten:
+•	Kommando-History untersuchen
+•	Logdateien analysieren
+•	temporäre Dateien untersuchen
+•	durch die eigenen Aktionen entstandene Änderungen identifizieren
+•	die für die Challenge definierten Spuren bearbeiten
+
+Abgabe:
+
+Die Phase gilt als abgeschlossen, sobald alle für die Aufgabe definierten Kriterien erfüllt wur-den.
+
+Bewertung
+
+Die einzelnen Phasen werden anhand definierter Kriterien bewertet. Neben dem erfolgreichen Abschluss einer Aufgabe können auch die benötigte Zeit und weitere für die jeweilige Phase definierte Kriterien in die Punktevergabe einfließen.
+
+Die Ergebnisse werden automatisch vom Challenge-System erfasst und dem jeweiligen Benut-zerkonto zugeordnet. Anschließend werden die Punkte im Leaderboard des aktuellen Events dargestellt.
+
+Dadurch soll neben dem technischen Lernerfolg auch ein spielerischer Wettbewerb zwischen den TeilnehmerInnen entstehen.
